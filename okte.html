@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html lang="km">    
+<head>
+  <head>
+    <link href='https://raw.githack.com/Neasreyka/Admin-logo/main/jw%202.0.8.css' rel='stylesheet'/> 
+	<title>phumikhmer.pro</title>
+	</head>
+<body>
+  <script src='https://raw.githack.com/Neasreyka/LogoUser/main/s38%20v2.0.6.js' type='text/javascript'></script>
+  <style>
+  .jwplayer .jw-rightclick .jw-rightclick-list {
+        border-radius: 1px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+</style>
+	<!-- Player -->
+<div id="player"></div>
+<script>
+  const playerInstance = jwplayer("player").setup({
+  controls: true,
+  sharing: false,
+  displaytitle: false,
+  displaydescription: true,
+  abouttext: "Buy Me a Coffee",
+  aboutlink: "@mr_ron168",
+
+  skin: {
+    name: "netflix"
+  },
+  captions: {
+    color: "#FFF",
+    fontSize: 16,
+    backgroundOpacity: 100,
+    edgeStyle: "uniform"
+  },
+
+  playlist: [
+    {
+      title: "phumikhmer.pro",
+      description: "phumikhmer.pro",
+      image: "",
+      sources: [
+      {
+          file:
+            "https://scontent-vie1-1.xx.fbcdn.net/v/t39.25447-2/10000000_627557799259519_173974180275600311_n.mp4?_nc_cat=108&vs=9807739b475e6c81&_nc_vs=HBksFQAYJEdJQ1dtQUItYmJPdndqb0NBTGU3YWxfWUZHb0NibWRqQUFBRhUAAsgBABUAGCRHSUNXbUFES1htTzJid2NEQUgybmMxbjBiZ1JEYnJGcUFBQUYVAgLIAQBLB4gScHJvZ3Jlc3NpdmVfcmVjaXBlATENc3Vic2FtcGxlX2ZwcwAQdm1hZl9lbmFibGVfbnN1YgAgbWVhc3VyZV9vcmlnaW5hbF9yZXNvbHV0aW9uX3NzaW0AKGNvbXB1dGVfc3NpbV9vbmx5X2F0X29yaWdpbmFsX3Jlc29sdXRpb24AHXVzZV9sYW5jem9zX2Zvcl92cW1fdXBzY2FsaW5nABFkaXNhYmxlX3Bvc3RfcHZxcwAVACUAHIwXQAAAAAAAAAAREQAAACbA8qrV3sLCAxUCKAJDMxgLdnRzX3ByZXZpZXccF0CtlPjU%2FfO2GClkYXNoX2k0bGl0ZWJhc2ljXzVzZWNnb3BfaHEyX2ZyYWdfMl92aWRlbxIAGBh2aWRlb3MudnRzLmNhbGxiYWNrLnByb2Q4ElZJREVPX1ZJRVdfUkVRVUVTVBsKiBVvZW1fdGFyZ2V0X2VuY29kZV90YWcGb2VwX2hkE29lbV9yZXF1ZXN0X3RpbWVfbXMBMAxvZW1fY2ZnX3J1bGUHdW5tdXRlZBNvZW1fcm9pX3JlYWNoX2NvdW50Azg2ORFvZW1faXNfZXhwZXJpbWVudAAMb2VtX3ZpZGVvX2lkEDM0MDAxMDYzMDM1NDQzODUSb2VtX3ZpZGVvX2Fzc2V0X2lkEDM1MjQ4MjE2MjExNzEzMDkVb2VtX3ZpZGVvX3Jlc291cmNlX2lkDzk5MDcwNzA0MjMxMTMyOBxvZW1fc291cmNlX3ZpZGVvX2VuY29kaW5nX2lkEDE4NTY0MTIyMzE0MTg1MjkOdnRzX3JlcXVlc3RfaWQAJQIcACXEARsHiAFzAzE3NwJjZAoyMDIzLTA1LTE1A3JjYgM4MDADYXBwBlZpZGVvcwJjdBlDT05UQUlORURfUE9TVF9BVFRBQ0hNRU5UE29yaWdpbmFsX2R1cmF0aW9uX3MIMzc4Ni41MzgCdHMVcHJvZ3Jlc3NpdmVfZW5jb2RpbmdzAA%3D%3D&ccb=1-7&_nc_sid=41a7d5&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ohc=tCVlnn7wHCMAX8owBab&_nc_ht=scontent-vie1-1.xx&edm=APRAPSkEAAAA&oh=00_AfCGc5EaEtD3GLZm-ipt6d-gVN1FzR3UXpbgX9RSZT9OWQ&oe=64674E85&_nc_rid=029299246137109",
+          label: "Auto",
+          default: true
+        }],
+    }
+  ],
+  advertising: {
+    client: "vast",
+  }
+});
+
+playerInstance.on("ready", function () {
+  const buttonId = "download-video-button";
+  const iconPath =
+    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgMTloMTh2Mkgzdi0yem0xMC01LjgyOEwxOS4wNzEgNy4xbDEuNDE0IDEuNDE0TDEyIDE3IDMuNTE1IDguNTE1IDQuOTI5IDcuMSAxMSAxMy4xN1YyaDJ2MTEuMTcyeiIgZmlsbD0icmdiYSgyNDcsMjQ3LDI0NywxKSIvPjwvc3ZnPg==";
+  const tooltipText = "Download";
+  // This function is executed when the button is clicked
+  function buttonClickAction() {
+    const playlistItem = playerInstance.getPlaylistItem();
+    const anchor = document.createElement("a");
+    const fileUrl = playlistItem.file;
+    anchor.setAttribute("href", fileUrl);
+    const downloadName = playlistItem.file.split("/").pop();
+    anchor.setAttribute("download", downloadName);
+    anchor.style.display = "none";
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+  }
+
+  // Move the timeslider in-line with other controls
+  const playerContainer = playerInstance.getContainer();
+  const buttonContainer = playerContainer.querySelector(".jw-button-container");
+  const spacer = buttonContainer.querySelector(".jw-spacer");
+  const timeSlider = playerContainer.querySelector(".jw-slider-time");
+  // Forward 10 seconds
+  const rewindContainer = playerContainer.querySelector(
+    ".jw-display-icon-rewind"
+  );
+  const forwardContainer = rewindContainer.cloneNode(true);
+  const forwardDisplayButton = forwardContainer.querySelector(
+    ".jw-icon-rewind"
+  );
+  forwardDisplayButton.style.transform = "scaleX(-1)";
+  forwardDisplayButton.ariaLabel = "Forward 10 Seconds";
+  const nextContainer = playerContainer.querySelector(".jw-display-icon-next");  nextContainer.parentNode.insertBefore(forwardContainer, nextContainer);
+  // control bar icon
+  playerContainer.querySelector(".jw-display-icon-next").style.display = "none"; // hide next button
+  const rewindControlBarButton = buttonContainer.querySelector(
+    ".jw-icon-rewind"
+  );
+  const forwardControlBarButton = rewindControlBarButton.cloneNode(true);
+  forwardControlBarButton.style.transform = "scaleX(-1)";
+  forwardControlBarButton.ariaLabel = "Forward 10 Seconds";  rewindControlBarButton.parentNode.insertBefore(
+    forwardControlBarButton,    rewindControlBarButton.nextElementSibling
+  );
+  // add onclick handlers
+  [forwardDisplayButton, forwardControlBarButton].forEach((button) => {
+    button.onclick = () => {     playerInstance.seek(playerInstance.getPosition() + 10);
+    };
+  });
+});
+</script>
+<style>
+    html,body,
+    #container {margin: 0;padding: 0;width: 100%;height: 100%;background: #000;color: #fff;overflow: hidden;}
+    #myElement {height: 100vh !important;}
+    body {height: 100vh;}
+    #container {position: absolute;text-align: center}
+    video {outline: 0}
+    </style>
+</body>
+</html>
